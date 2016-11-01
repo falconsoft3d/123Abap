@@ -2,10 +2,10 @@
 <widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>123Abap</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Aplicacion de ayuda de Abap.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="falconsoft.3d@gmail.com" href="http://www.marlonfalcon.cl">
+        Marlon Falcón Hernández
     </author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
