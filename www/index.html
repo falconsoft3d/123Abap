@@ -39,18 +39,111 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/my.css" />
     <title>123Abap</title>
 </head>
 
 <body>
-    <div class="app">
+    <div>
+       <!-- 
         <h1>Abap</h1>
         <div id="deviceready" class="blink">
             <p class="event listening">Connecting to Device</p>
             <p class="event received">Listo!!</p>
         </div>
+-->
+         <!-- Pagina Principal -->
+    <div id="page1" data-role="page" id="bar">
+        <div data-role="header">
+            <a href="index.html" class="ui-btn ui-btn-left ui-btn-inline ui-icon-home ui-btn-icon-notext">Icon only</a>
+            <h1>123Abap</h1>
+            <a href="index.html" data-icon="delete" onclick="close()">Salir</a>           
+        </div>
+        <div class="wrapper">
+            <img src="icon.png" alt="" class="mylogo">
+            <a href="#codigos" class="ui-btn ui-icon-audio ui-btn-icon-left">Listado de Códigos</a>
+            <a href="#transaccion" class="ui-btn ui-icon-edit ui-btn-icon-left">Transacciones</a>
+            <a href="#acercade" class="ui-btn ui-icon-location ui-btn-icon-left">Acerca de</a>
+        </div>
+
+        <div id="footer" class="ui-footer ui-bar-a" data-theme="a" data-role="footer" role="contentinfo">
+            <h1 class="ui-title" role="heading" aria-level="1">www.123sap.cl</h1>
+        </div>
+    </div><!-- /Pagina Principal -->
+
+
+        <!-- Pagina Principal -->
+    <div id="acercade" data-role="page" id="bar">
+        <div data-role="header">
+            <a href="index.html" class="ui-btn ui-btn-left ui-btn-inline ui-icon-home ui-btn-icon-notext">Icon only</a>
+            <h1>123Abap</h1>
+            <a href="index.html" data-icon="delete" onclick="close()">Salir</a>
+        </div>
+        <div class="wrapper">
+            <img src="icon.png" alt="" class="mylogo">
+            <p>Autor: Marlon Falcón Hernández</p>
+            <a href="mailto:falconsoft.3d@gmail.com">falconsoft.3d@gmail.com</a>
+            </br>
+            <p>+56942994534</p>
+            <a href="http://www.123sap.cl">www.123sap.cl</a>
+            <a href="index.html" class="ui-btn ui-icon-location ui-btn-icon-left">Regresar</a>
+        </div>
+        <div id="footer" class="ui-footer ui-bar-a" data-theme="a" data-role="footer" role="contentinfo">
+            <h1 class="ui-title" role="heading" aria-level="1">www.123sap.cl</h1>
+        </div>
+    </div><!-- /Pagina Principal -->
+
+
+
+    <!-- Pagina Principal -->
+    <div id="codigos" data-role="page" id="bar" >
+        <div data-role="header">
+             <a href="index.html" class="ui-btn ui-btn-left ui-btn-inline ui-icon-home ui-btn-icon-notext">Icon only</a>
+            <h1>123Abap</h1>
+            <a href="index.html" data-icon="delete" onclick="close()">Salir</a>
+        </div>
+        <div class="wrapper">
+            <ul data-role="listview" data-inset="true" data-filter="true">
+                <li><a href="#">Acura</a></li>
+                <li><a href="#">Audi</a></li>
+                <li><a href="#">BMW</a></li>
+                <li><a href="#">Cadillac</a></li>
+                <li><a href="#">Ferrari</a></li>
+            </ul>
+        </div>
+        <div id="footer" class="ui-footer ui-bar-a" data-theme="a" data-role="footer" role="contentinfo">
+            <h1 class="ui-title" role="heading" aria-level="1">www.123sap.cl</h1>
+        </div>
+    </div><!-- /Pagina Principal -->
+
+
+    <!-- Pagina Principal -->
+    <div id="transaccion" data-role="page" id="bar" >
+        <div data-role="header">
+             <a href="index.html" class="ui-btn ui-btn-left ui-btn-inline ui-icon-home ui-btn-icon-notext">Icon only</a>
+            <h1>123Abap</h1>
+            <a href="index.html" data-icon="delete" onclick="close()">Salir</a>
+        </div>
+        <div class="wrapper">
+            <ul data-role="listview" data-inset="true" data-filter="true">
+                <li><a href="#">Acura</a></li>
+                <li><a href="#">Audi</a></li>
+                <li><a href="#">BMW</a></li>
+                <li><a href="#">Cadillac</a></li>
+                <li><a href="#">Ferrari</a></li>
+            </ul>
+        </div>
+        <div id="footer" class="ui-footer ui-bar-a" data-theme="a" data-role="footer" role="contentinfo">
+            <h1 class="ui-title" role="heading" aria-level="1">www.123sap.cl</h1>
+        </div>
+    </div><!-- /Pagina Principal -->
+
+
     </div>
     <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
